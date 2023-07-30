@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Analog Clock UI</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="message" id="message">
+      <h1>Clock App</h1>
+      <p style="font-size: large">
+        This is a clock app created using HTML, CSS, and JavaScript.
+      </p>
+      <p>Build with <i class="bx bxl-visual-studio"></i> and ❤️ by Vishnu</p>
+    </div>
+    <div class="clock">
+        <!-- Hour Section -->
+        <div class="hour">
+          <p class="brand_name">vishnu</p>
+           <p class="heart">❤️</p>
+          <div class="hr" id="hr"></div>
+        </div>
+        <!-- Minute Section -->
+        <div class="min">
+          <div class="mn" id="mn"></div>
+        </div>
+        <!-- Second Section -->
+        <div class="sec">
+          <div class="sc" id="sc"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+      integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      particlesJS.load("particles-js", "./particles.json", function () {
+        console.log("particles.json loaded...");
+      });
+      particlesJS.load();
+    </script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
